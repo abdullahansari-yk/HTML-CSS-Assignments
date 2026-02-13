@@ -1,40 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Layout</title>
-    <link rel="stylesheet" href="./index.css">
-
+    <title>2-flex-layout</title>
     <style>
-        .container {
-            width: 1200px;
+        body {
             margin: 0 auto;
+            height: 100vh;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .left {
+        #container {
+            display: flex;
+            width: 1200px;
+        }
+
+        #left {
             background-color: red;
-            flex-grow: 1;
+             flex-grow: 1;    
         }
 
-        .right {
+        #right {
             background-color: blue;
-            flex-grow: 2;
+            flex-grow: 2 ;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <h1>Left</h1>
-        </div>
-        <div class="right">
-            <h1>Right</h1>
-        </div>
+    <div id="container">
+        <h1 id="left">Left</h1>
+        <h1 id="right">Right</h1>
     </div>
 </body>
 

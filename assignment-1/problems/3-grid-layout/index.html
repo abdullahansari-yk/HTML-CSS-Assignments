@@ -4,34 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <title>3-grid-layout</title>
     <style>
-        .container {
-            width: 1200px;
+        body {
+            background-color: wheat;
+            margin: 0;
+            height: 100vh;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        #container {
+            max-width: 1200px;
+           
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 10px;
+            /* grid-template-columns: 50px 50px; */
         }
 
-        .left {
+        #left {
             background-color: red;
         }
 
-        .right {
+        #right {
             background-color: blue;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <h1>Left</h1>
-        </div>
-        <div class="right">
-            <h1>Right</h1>
-        </div>
+    <div id="container">
+        <h1 id="left">Left</h1>
+        <h1 id="right">Right</h1>
     </div>
 </body>
 

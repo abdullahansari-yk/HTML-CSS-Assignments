@@ -1,259 +1,187 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #0078d4;
+html,
+body {
+    font-family: Segoe UI;
 }
 
-.buttonBanner {
-    color: #9ba3b4;
-    background-color: rgba(255,255,255,0.04);
-    padding: 10px;
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 120px;
+    background-color: #0D1117;
+}
+
+#vs_logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav_child {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    cursor: pointer;
+}
+
+.nav_headings {
+    color: #C3D0E5;
     font-size: 16px;
-    border-radius: 32px;
-    border: 1px solid rgba(255,255,255,0.07);
+    font-weight: 500
 }
 
-.bannerLink {
-    padding-right: 8px;
+.nav_headings:hover {
+    color: white;
+
 }
 
-.container {
+#theme_div {
+    width: 30px;
+    height: 30px;
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.heroContainer {
+#theme_button {
+    width: 17px;
+}
+
+#theme_div:hover {
+    background-color: rgba(128, 128, 128, 0.198);
+
+}
+
+.right_nav_child {
+    display: flex;
+    gap: 8px;
+}
+
+#nav_search_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    color: gray;
+    width: 170px;
+    padding: 6px 9px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#nav_search_section:hover {
+    background-color: rgba(128, 128, 128, 0.198);
+}
+
+#download_btn {
+    background-color: #258ddd;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#download_btn:hover {
+    background-color: #0069B9;
+}
+
+#second_nav {
+    height: 45px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #0A1525;
+    border-top: .1px solid rgba(128, 128, 128, 0.339);
+    border-bottom: .1px solid rgba(128, 128, 128, 0.339);
+    color: #C3D0E5;
+    padding: 0 10px;
 }
 
-.heroContainer > div {
-    text-align:left;
+#second_nav span {
+    color: #0A5CD9;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
-.flex {
+#cross {
+    width: 28px;
+    height: 28px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+#cross:hover {
+    background-color: rgba(128, 128, 128, 0.198)
 }
 
-.verticalCenter {
+#version_no {
+    cursor: pointer;
+}
+
+#body {
+    color: white;
+    width: 99vw;
+    height: 165vh;
+    background-image: url("back.png");
+    background-size: contain;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.navLink {
-    padding-left: 20px;
-    color: gray;
-}
-
-.topImage {
-    padding-right: 12px;
-}
-
-.banner {
-    padding: 10px;
-    background-color: black;
-    color: gray;
-    font-size: 14px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.navLink:hover {
-    color: white;
-}
-
-.searchInput {
-    border-radius: 5px;
-    border: 1px solid rgb(255, 255, 255, 0.2);
-    padding: 8px;
-    font-size: 16px;
-    background-color: black;
-}
-
-.downloadButton {
-    background-color: #0078d4;
-    color: white;
-    border: none;
-    padding: 7px;
-    padding-left: 0px;
-    width: 120px;
-    padding-right: 0px;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-/* Header Styles */
-header {
-    background-color: black;
-    color: white;
-}
-
-section {
-    background-color: black;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    color: #0078d4;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #007acc;
-}
-
-/* Hero Section Styles */
-.hero {
-    background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
-    color: white;
-    padding: 50px 20px;
-}
-
-.hero h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #0078d4;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background 0.3s;
-}
-
-.cta-button:hover {
-    background: #e5b800;
-}
-
-/* Language Style  */
-.language {
-    color: white;
-}
-
-.language .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 2rem;
-}
-
-.language .container p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 160%;
-    color:#9ba3b4;
-}
-
-.language .languagePanel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-inline: 2.5rem
-}
-
-.languagePanel img {
-    height: 40px;
-    width: auto;
-}
-
-footer {
-    background: #333;
-    color: white;
+    align-items: center;
+    gap: 50px;
     text-align: center;
-    padding: 10px 20px;
 }
 
-/* Responsiveness, we'll discuss this when we reach tailwind
-@media (width < 1200px) {
-    .heroContainer div:has(img) {
-        width: 66.66666667%;
-        padding-inline: 2.5rem;
-    } 
-    .heroContainer img {
-        width: 100%;
-    }
-    .container {
-        max-width: 970px;
-    }
-    .navContainer {
-        max-width: 1060px;
-    }
-    .language .container {
-        grid-template-columns: 1fr 1fr;
-    }
+#starting_heading{
+    padding-top: 35px;
+}
+.main_heading {
+    /* margin-top: px; */
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 89px;
+    /* text-align: center; */
 }
 
-@media (max-width: 768px) {
-    .hero {
-        padding-block: 40px;
-    }
-    
-    .hero p {
-        font-size: 1em;
-    }
-    
-    .verticalCenter > div:has(.navLink) {
-        display: none;
-    }
-    .navContainer {
-       max-width: 600px;
-    }
-    .heroContainer {
-        flex-direction: column;
-        align-items: center;
-        gap:40px
-
-    }
-    .heroContainer > div {
-        text-align: center
-    }
-    .heroContainer div:has(img) {
-        width: 100%;
-    }
-    .language .languagePanel {
-        grid-template-columns: max-content 1fr max-content 1fr;
-    }
+#download_for {
+    background-color: #1B1F26;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
 }
- */
+#download_for span{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#download_windows {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E6EEFA;
+    border-radius: 7px;
+    padding: 11px 15px;
+    color: black;
+}
+#web{
+    font-size: 12px;
+    font-weight: 500;
+}
+#vsc{
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.856);
+}

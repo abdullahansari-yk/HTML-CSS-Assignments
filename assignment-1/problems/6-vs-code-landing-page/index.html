@@ -4,125 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Studio Code Landing Page</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>6-vs-code-landing-page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <div class="navContainer">
-            <div class="flex">
-                <div class="verticalCenter">
-                    <img src="https://code.visualstudio.com/favicon.ico" width="20" height="20" class="topImage" />
-                </div>
-                <h3>Visual Studio Code</h3>
-                <div class="verticalCenter">
-                    <div>
-                        <a class="navLink" href="#">Docs</a>
-                        <a class="navLink" href="#">Updates</a>
-                        <a class="navLink" href="#">Blog</a>
-                        <a class="navLink" href="#">Api</a>
-                        <a class="navLink" href="#">Extensions</a>
-                        <a class="navLink" href="#">FAQ</a>
-                        <a class="navLink" href="#">Learn</a>
-                    </div>
-                </div>
+    <div id="navbar">
+        <div class="nav_child">
+            <div id="vs_logo">
+                <img src="vscode.png" width="24" alt="">
+                <div style="font-size: 20px; font-weight: 600; color: white;">Visual Studio Code</div>
             </div>
-            <div class="verticalCenter">
-                <div class="searchContainer">
-                    <input type="text" placeholder="Search Docs" class="searchInput" />
-                    <button class="downloadButton">Download</button>
-                </div>
+            <div class="nav_headings">Docs</div>
+            <div class="nav_headings">Updates</div>
+            <div class="nav_headings">Blog</div>
+            <div class="nav_headings">API</div>
+            <div class="nav_headings">Extensions</div>
+            <div class="nav_headings">MCP</div>
+            <div class="nav_headings">FAQ</div>
+        </div>
+        <div class="nav_child right_nav_child">
+            <div id="theme_div">
+                <img id="theme_button" src="light_mode.png" alt="">
             </div>
+            <div id="nav_search_section">
+                <div style="display: flex; align-items: center; gap: 10px;;">
+                    <img src="search-dark.svg" alt="">
+                    <div style="font-size: 14px; font-weight: 400;">Search</div>
+                </div>
+                <div style="font-size: 10px; border:1px solid gray; ">Ctrl+Shift+P</div>
+            </div>
+            <div id="download_btn">
+                Download</div>
         </div>
+    </div>
+    <div id="second_nav">
+        <div></div>
+        <div>
+            <span id="version_no">Version 1.109</span> is now available! Read about the new features and fixes from
+            January.
         </div>
-    </header>
+        <div id="cross"><img width="18" src="close.png" alt=""></div>
+    </div>
+    <div id="body">
+        <div id="starting_heading">
+            <div class="main_heading">The open source</div>
+            <div class="main_heading">AI code editor</div>
+        </div>
+        <div id="download_for">
+            <div id="download_windows">
+                <span><img width="25" src="windows.png" alt=""></span> Download for Windows
+            </div>
+            <div id="web"><span>Web</span>, <span>Insiders edition</span>, or <span>other platforms</span></div>
+            <div id="vsc">By using VS Code, you agree to its <span>license</span> and <span>privacy statement</span></div>
+        </div>
+        <div><img src="main.png" alt=""></div>
+    </div>
 
-    <section>
-        <div class="banner">
-            <a href="#" class="bannerLink">Version 1.92</a> is now available! Read about the new features and fixes from
-            July.
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="container">
-            <div class="heroContainer">
-                <div>
-                    <br /><br /><br />
-                    <span class="buttonBanner">
-                        Free. Built on open source. Runs anywhere.
-                    </span>
-                    <br /><br />
-                    <h2 style="text-align: left;">Code Editing. Redefined.</h2>
-                    <a href="#" class="cta-button">Download for MacOS</a>
-                </div>
-                <div>
-                    <img src="https://code.visualstudio.com/assets/home/home-screenshot-mac-2x-v2.png" width="800px" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="language">
-        <div class="container">
-            <div>
-                <h2>Code in any language</h2>
-                <p>VS Code supports almost every major programming language. Several ship in the box, like JavaScript,
-                    TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
-            </div>
-            <div class="languagePanel">
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="Javascript">
-                    <code class="verticalCenter">JavaScript</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="TypeScript">
-                    <code class="verticalCenter">TypeScript</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-python.png" alt="Python">
-                    <code class="verticalCenter">Python</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-cs.png" alt="C#">
-                    <code class="verticalCenter">C#</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-cpp.png" alt="C++">
-                    <code class="verticalCenter">C++</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-html.png" alt="HTML">
-                    <code class="verticalCenter">HTML</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-java.png" alt="Java">
-                    <code class="verticalCenter">Java</code>
-                </div>
-                <div class="flex"> 
-                    <img src="https://code.visualstudio.com/assets/home/language-json.png" alt="JSON">
-                    <code class="verticalCenter">JSON</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-php.png" alt="PHP">
-                    <code class="verticalCenter">PHP</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-markdown.png" alt="Markdown">
-                    <code class="verticalCenter">Markdown</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-powershell.png" alt="Powershell">
-                    <code class="verticalCenter">Powershell</code>
-                </div>
-                <div class="flex">
-                    <img src="https://code.visualstudio.com/assets/home/language-yaml.png" alt="YAML">
-                    <code class="verticalCenter">YAML</code>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
 
 </html>
