@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  /* background-color: red; */
+  cursor: pointer;
+}
+
+#navLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+#navLeft img {
+  width: 45px;
+  height: 45px;
+}
+#navLeft div {
+  font-size: 30px;
+  font-weight: 600;
+}
+#navMiddle {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  cursor: pointer;
+}
+#navRight {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  cursor: pointer;
+}
+#navRight button {
+  background-color: transparent;
+  padding: 7px 17px;
+  border-radius: 12px;
+  border: 1.7px solid rgba(0, 0, 0, 0.171);
+}
+
+/* mainContainer */
+#mainContainer {
+  width: 100%;
+  height: calc(100vh - 75px);
+  background-color: white;
+}
+#main {
+  width: 98%;
+  height: 96%;
+  margin: auto;
+  border: 2px solid rgba(128, 128, 128, 0.412);
+  border-radius: 35px;
+  background-image: url(background.avif);
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#headingLogo {
+  /* borderra: 50%; */
+  box-shadow: 20px 30px 30px -13px rgba(0, 0, 0, 0.708);
+}
+
+#main p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+#main button {
+  background-color: #1a76ff;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  margin-top: 20px;
+}
+#main button:hover {
+  cursor: pointer;
+}
+.heading {
+  font-size: 80px;
+  font-weight: 400;
+}
+.heading2 {
+  color: gray;
+}
+
+#image1 {
+  position: absolute;
+  top: 150px;
+  left: 17px;
+}
+#image1 img {
+  width: 200px;
+  height: 250px;
+}
+#image2 {
+  position: absolute;
+  top: 120px;
+  right: 17px;
+}
+#image2 img {
+  width: 250px;
+  height: 300px;
+}
+#image3 {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+}
+#image3 img {
+  width: 300px;
+  height: 250px;
+}
+#image4 {
+  position: absolute;
+  bottom: 24px;
+  right: 100px;
+}
+#image4 img {
+  width: 300px;
+  height: 250px;
+}

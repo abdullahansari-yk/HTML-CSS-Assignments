@@ -574,9 +574,9 @@ form button:hover {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 30px ;
-gba(128, 128, 128, 0.277);
-  border-radius: 12px;
+  padding: 30px;
+  border: 0.1px solid rgba(128, 128, 128, 0.277);
+  border-radius: 12px;  
 }
 #copyright div {
   background-color: transparent;
