@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* main */
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #000619;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 220px;
+}
+#navlLeft {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  /* background-color: rgba(127, 255, 212, 0.256); */
+}
+#navLeftLogoItems {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-family: "Playwrite NZ Basic", cursive;
+  gap: 5px;
+}
+#navlLeft img {
+  width: 50px;
+}
+#navLeftItems {
+  font-size: 17px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#navLeftItems div {
+  color: #a8afb6;
+  cursor: pointer;
+}
+#navLeftItems div:first-child {
+  background-color: #303a47;
+  /* #283240 */
+  color: white;
+  width: 85px;
+  height: 40px;
+  border: 0.1px solid rgba(255, 255, 255, 0.426);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navnavRight {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#navnavRight div:first-child {
+  background-color: white;
+  color: black;
+  width: 110px;
+  height: 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#navnavRight div:nth-child(2) {
+  background-color: #6d83b7;
+  width: 110px;
+  height: 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* hero */
+#hero {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#cards1 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #000619;
+  padding: 25px;
+  border: 1.2px solid rgba(255, 255, 255, 0.364);
+  border-radius: 12px;
+  width: 250px;
+  height: 200px;
+}
+.cards div:first-child {
+  font-size: 25px;
+  color: #e81980;
+}
+.card1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.card2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+#cards1 .cards {
+  transform: rotate(2deg);
+}
+
+#cards2 .cards {
+  transform: rotate(-2deg);
+}
+.card1 {
+  background: radial-gradient(circle at bottom right, #920c6f, transparent 39%);
+}
+.card2 {
+  background: radial-gradient(circle at top right, #920c6f, transparent 65%);
+}
+.card3 {
+  display: flex;
+  justify-content: space-around;
+  background: radial-gradient(circle at center left, #920c6f, transparent 55%);
+}
+.card4 {
+  display: flex;
+  justify-content: space-around;
+  background: radial-gradient(circle at top left, #920c6f, transparent 43%);
+}
+#robots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+}
+#robots img {
+  width: 240px;
+  margin: -55px;
+}
+#robots img:nth-child(1) {
+  z-index: 1;
+}
+#robots img:nth-child(2) {
+  rotate: 315deg;
+  z-index: 2;
+}
+#robots img:nth-child(3) {
+  z-index: 3;
+}
+#cards2 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#bigHeading {
+  font-size: 60px;
+  line-height: 55px;
+}
