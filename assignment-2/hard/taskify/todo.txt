@@ -1,0 +1,9 @@
+// 1. create main section 
+// 2. divides them in 4 sections (grid).
+// 3. work on first section (to do)
+// 4. add listener on btn 
+
+## when use click on Add new button, following things should happen
+1. input for todo name and description should generate as new card in same category from which the btn was called.
+2. then user will type name and description for that particilar todo.
+3.after click on done(or enter ), new todo card should generrate.

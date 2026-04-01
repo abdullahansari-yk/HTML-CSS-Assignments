@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="todo">
+            <div class="top">
+                <div class="topTitle">To do</div>
+                <div> <img src="image.png" alt=""></div>
+            </div>
+            <div class="cards todoCards" id="cards1" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+                <div class="card" draggable="true" ondragstart="dragstartHandler(event)">
+                    <div class="title">To do 1</div>
+                    <div class="description">To do do do do do do do</div>
+                </div>
+                <div class="card" draggable="true" ondragstart="dragstartHandler(event)">
+                    <div class="title">To do 2</div>
+                    <div class="description">To do do do do do do do</div>
+                </div>
+
+            </div>
+
+            <div class="AddBtn">
+                <div>Add new</div>
+                <div>+</div>
+            </div>
+        </div>
+
+        <div id="inProgress">
+            <div class="top">
+                <div class="topTitle">In Progress</div>
+                <div> <img src="image.png" alt=""></div>
+            </div>
+            <div class="cards inProgressCards" id="cards2" ondragover="dragoverHandler(event)"
+                ondrop="dropHandler(event)">
+                <div class="card" draggable="true" ondragstart="dragstartHandler(event)">
+                    <div class="title">To do 3</div>
+                    <div class="description">To do do do do do do do</div>
+                </div>
+
+            </div>
+
+            <div class="AddBtn">
+                <div>Add new</div>
+                <div>+</div>
+            </div>
+        </div>
+
+        <div id="underReview">
+            <div class="top">
+                <div class="topTitle">Under Review</div>
+                <div> <img src="image.png" alt=""></div>
+            </div>
+            <div class="cards underReviewCards" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+                <div class="card" draggable="true" ondragstart="dragstartHandler(event)">
+                    <div class="title">To do 4</div>
+                    <div class="description">To do do do do do do do</div>
+                </div>
+                <div class="card" draggable="true" ondragstart="dragstartHandler(event)">
+                    <div class="title">To do 5</div>
+                    <div class="description">To do do do do do do do</div>
+                </div>
+            </div>
+
+
+
+            <div class="AddBtn">
+                <div>Add new</div>
+                <div>+</div>
+            </div>
+        </div>
+
+        <div id="finished">
+            <div class="top">
+                <div class="topTitle">Finished</div>
+                <div> <img src="image.png" alt=""></div>
+            </div>
+            <div class="cards finishedCards" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+                <div class="card" draggable="true" ondragstart="dragstartHandler(event)">
+                    <div class="title">To do 6</div>
+                    <div class="description">To do do do do do do do</div>
+                </div>
+                <div class="card" draggable="true" ondragstart="dragstartHandler(event)">
+                    <div class="title">To do 7</div>
+                    <div class="description">To do do do do do do do</div>
+                </div>
+            </div>
+
+
+            <div class="AddBtn">
+                <div>Add new</div>
+                <div>+</div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="index.js"></script> -->
+<script src="index2.js"></script>
+
+</html>
